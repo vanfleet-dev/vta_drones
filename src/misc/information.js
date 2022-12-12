@@ -24,12 +24,28 @@ export const siteInfo = {
     platform: {
         title: "Platform",
         carousel: [carouselImage1, carouselImage2, carouselImage3],
-        text:{
-            about:"This is just a filler for now because I can not thing of how I want to implement the index information in the platform section.  First thing first, get the layout down and then flesh out the rest of the functionality.  This is really one of the last unknowns anyway so it should be fine.",
-            tab2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            tab3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            tab4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            } 
+        carouselText: ["mee first, I'm great", "then me!  I'm in the middle", "Third here, I'm the largest of them all"],
+        tabInfo: [
+            {
+                title: "sample1",
+                content: "content1"
+            },
+            {
+                title: "sample2",
+                content: "content2"
+            },
+            {
+                title: "sample3",
+                content: "content3"
+            },
+            {
+                title: "sample4",
+                content: "content4"
+            },
+            {
+                title: "sample5",
+                content: "content5"
+            }
+        ]
     }
-
 }

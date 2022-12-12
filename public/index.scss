@@ -98,9 +98,12 @@ h2 {
     height: 100vh;
     .slider-container {
         position: relative;
-        width: 50%;
+        width: 70%;
         height: 50%;
         margin: 0 auto 3% auto;
+        @media(max-width: 850px) {
+            width: 90%;
+        }
         .left-arrow,
         .right-arrow {
             position: absolute;
@@ -117,18 +120,38 @@ h2 {
             right: 1%;
         }
         .slider {
+            display: flex;
+            justify-content: center;
+            align-items: end;
             background-repeat: no-repeat;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
             border: 3px solid $primary-color;
             margin: 5% auto;
             width: 100%;
             height: 100%;
+            p {
+                background-color: $primary-color;
+                padding: 1%;
+                font-size: 1.25rem;
+            }
         }
     }
     
     .info-container {
         margin: 0 auto;
         width: 50%;
+        .tabs-outer-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: space-around;
+            width: 100%;
+            .block-tabs {
+                display: flex;
+                justify-content: space-around;
+                font-size: 1.24rem;
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 function About(props){
-    return <div className="about-container">
+    return <div className="about-container" id="about">
         <h2>{props.title}</h2>
         <div className="image-container">
             <img src={props.image} alt={props.alt} />

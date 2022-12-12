@@ -7,7 +7,9 @@ function ImageSlider(props){
         backgroundImage: `url(${props.slides[props.currentIndex]})`,
     }
 
-    return <div className="slider" style={sliderStyles}></div>
+    return <div className="slider" style={sliderStyles}>
+        <p>{props.text[props.currentIndex]}</p>
+    </div>
 
 }
 

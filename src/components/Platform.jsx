@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ImageSlider from './ImageSlider';
+import Tabs from './Tabs';
 
 function Platform(props){
 
@@ -21,15 +22,15 @@ function Platform(props){
 
     }
 
-    return <div className="platform-container">
+    return <div className="platform-container" id="platform">
         <h2>{props.title}</h2>
         <div className="slider-container">
             <div className="left-arrow" onClick={goToPrevious}>◀</div>
-            <ImageSlider slides={props.carousel} currentIndex={currentIndex} />
+            <ImageSlider slides={props.carousel} text={props.carouselText} currentIndex={currentIndex} />
             <div className="right-arrow" onClick={goToNext}>▶</div>
         </div>
         <div className="info-container">
-            <p>{props.text.about}</p>
+            <Tabs tabs={props.text} />
         </div>
     </div>
 }

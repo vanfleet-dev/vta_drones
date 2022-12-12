@@ -138,9 +138,15 @@ h2 {
 
 .platform-container .slider-container {
   position: relative;
-  width: 50%;
+  width: 70%;
   height: 50%;
   margin: 0 auto 3% auto;
+}
+
+@media (max-width: 850px) {
+  .platform-container .slider-container {
+    width: 90%;
+  }
 }
 
 .platform-container .slider-container .left-arrow,
@@ -162,17 +168,58 @@ h2 {
 }
 
 .platform-container .slider-container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   border: 3px solid grey;
   margin: 5% auto;
   width: 100%;
   height: 100%;
 }
 
+.platform-container .slider-container .slider p {
+  background-color: grey;
+  padding: 1%;
+  font-size: 1.25rem;
+}
+
 .platform-container .info-container {
   margin: 0 auto;
   width: 50%;
+}
+
+.platform-container .info-container .tabs-outer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  width: 100%;
+}
+
+.platform-container .info-container .tabs-outer-container .block-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.24rem;
 }
 /*# sourceMappingURL=index.css.map */

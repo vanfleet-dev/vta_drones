@@ -31,8 +31,9 @@ function App() {
           text={siteInfo.about.text} />
         <Platform 
           title={siteInfo.platform.title}
-          carousel={siteInfo.platform.carousel} 
-          text={siteInfo.platform.text}/>
+          carousel={siteInfo.platform.carousel}
+          carouselText={siteInfo.platform.carouselText} 
+          text={siteInfo.platform.tabInfo}/>
         <Examples />
       </div>
     );
