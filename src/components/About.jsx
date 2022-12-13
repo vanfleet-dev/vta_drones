@@ -8,7 +8,7 @@ function About(props){
         </div>
         <div className="about-text">
             {props.text.map(item => {
-                return(<p>{item}</p>)
+                return(<><p>{item}</p><br /></>)
             })}
         </div>
     </div>

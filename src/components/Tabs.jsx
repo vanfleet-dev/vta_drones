@@ -23,7 +23,7 @@ function Tabs(props){
             </div>
             <div className="content-tabs">
                 <p className="active-content">{props.tabs[activeContent].content.map(item => {
-                    return <p>{item}</p>
+                    return <p>{item}<br /><br /></p>
                 })}</p>
             </div>
         </>
