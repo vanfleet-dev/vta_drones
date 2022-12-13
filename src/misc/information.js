@@ -162,9 +162,8 @@ export const siteInfo = {
         ],
         video: "https://www.youtube.com/embed/1eN4xec3ID4",
         description: 
-        [
-            "Internally we documented our builds and kept detailed flight logs and pre-flight checks.", 
-            "Below are links to samples of the flight logs and build logs."
+        [ 
+            "Below is a link to a sample of a internal UAS build log."
         ],
         button: 
         [

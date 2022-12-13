@@ -11,7 +11,7 @@ function Examples(props){
         </div>
         <div className="map-container">
             <iframe src="https://map-demo-2.devdock.me/" frameborder="0" className="example-maps"></iframe>
-            <p>{props.map1Text}</p>
+            <p>{props.map2Text}</p>
         </div>
     </div>
 }

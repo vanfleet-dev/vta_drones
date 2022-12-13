@@ -12,10 +12,10 @@ function Documentation(props){
                 return <><p>{item}</p></>
             })}</p>
             <div className="button-container">
-                <button>{props.button[0]}</button>
-                <button>{props.button[1]}</button>
+                <button><a href="https://drive.google.com/file/d/1hJf01MDPHStYzH6kdFpdpTxxaonGWLWZ/view">{props.button[0]}</a></button>
+                {/* <button>{props.button[1]}</button> */}
             </div>
-            <p className="note">**Links re-direct to google docs.</p>
+            <p className="note">**Button re-direct to google docs.</p>
         </div>
         <div className='im-useless'></div>
     </div>)
