@@ -1,21 +1,34 @@
 import React, { useState } from 'react';
 
 function Tabs(props){
-    const [active, setActive] = useState(0);
+    const [activeContent, setActiveContent] = useState(0);
+    const [activeTab, setActiveTab] = useState(false);
 
+    function toggleClass(index){
+        setActiveTab(index);
+    }
+
+    
     return(
-        <div className="tabs-outer-container">
-            <div className="block-tabs">
+        <>
+            <div className="block-tabs">   
                 {props.tabs.map((tab, index) =>{
-                    return <div className="tab" onClick={() =>{setActive(index)}}>{props.tabs[index].title}</div>
+                    return <div 
+                    className={activeTab === index? "tab active-tab" : "tab"}
+                    onClick={() =>{
+                        setActiveContent(index); toggleClass(index)}}>
+                        {props.tabs[index].title}
+                    </div>
                 })}
             </div>
             <div className="content-tabs">
-                <p className="active-content">{props.tabs[active].content}</p>
+                <p className="active-content">{props.tabs[activeContent].content.map(item => {
+                    return <p>{item}</p>
+                })}</p>
             </div>
-        </div>
+        </>
         
     )
 }
 
-export default Tabs;
+export default Tabs;//props.tabs[activeContent].content

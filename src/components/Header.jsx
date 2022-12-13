@@ -1,9 +1,9 @@
 import React from 'react'
+import picture from '../media/vta_drones_logo.svg';
 
 function Header(props){
     return <div className="header-section" id="home">
-        <h1>{props.header}</h1>
-        <h3>{props.subtext}</h3>
+       <img src={picture} alt="fd" />
     </div>
 }
 
