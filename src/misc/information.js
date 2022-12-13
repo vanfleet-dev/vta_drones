@@ -40,7 +40,7 @@ export const siteInfo = {
     },
     gallery: {
         title: "Gallery",
-        description: "Images showcasing the UAS platform and various aspects of work done at VTA DRONES. Click the image description to see full size",
+        description: "",
         carousel: [carouselImage1, carouselImage2, carouselImage3, carouselImage4, carouselImage5, carouselImage6, carouselImage7, carouselImage8, carouselImage9, carouselImage10, carouselImage11, carouselImage12, carouselImage13, carouselImage14, carouselImage15],
         carouselText: [
             "UAS w/ gimbal angle", 
@@ -63,7 +63,7 @@ export const siteInfo = {
     },
     platform: {
         title: "Platform",
-        text: "Details and specs for the UAS platform and ground control station (GCS)",
+        text: "",
         tabInfo: [
             {
                 title: "UAS",

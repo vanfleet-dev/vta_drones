@@ -24,6 +24,9 @@ p {
         font-size: .85rem;
     }
 }
+.hide {
+    color: #1f1f1f;
+}
 
 ////components/////
 .root {
@@ -176,14 +179,14 @@ p {
         text-align: center;
         @media(max-width: 700px){
         width: 80%;
-        padding: 6%
+        padding: 6%;
         }
     }
     .slider-container {
         position: relative;
         width: 70%;
         height: 50%;
-        margin: 0 auto 1% auto;
+        margin: 1% auto 1% auto;
         @media(max-width: 850px) {
             width: 90%;
         }
@@ -238,7 +241,7 @@ p {
             background-position: center;
             background-size: contain;
             width: 100%;
-            height: 40rem;
+            height: 38rem;
             @media(max-width: 850px) {
                 height: 24rem;
             }
@@ -258,6 +261,10 @@ p {
                 }
             }
         }
+    }
+    .note {
+        font-size: .75rem;
+        font-style: italic;
     }
 }
 
@@ -460,6 +467,11 @@ p {
             color: aliceblue;
             cursor: pointer;
         }
+    }
+    .note {
+        font-size: .75rem;
+        font-style: italic;
+        margin-right: 5%;
     }
     .im-useless {
         @media(max-width: 700px){

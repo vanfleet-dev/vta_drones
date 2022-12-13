@@ -15,6 +15,7 @@ function Documentation(props){
                 <button>{props.button[0]}</button>
                 <button>{props.button[1]}</button>
             </div>
+            <p className="note">**Links re-direct to google docs.</p>
         </div>
         <div className='im-useless'></div>
     </div>)

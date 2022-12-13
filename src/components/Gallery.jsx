@@ -23,7 +23,7 @@ function Gallery(props){
 
     return <div className="gallery-container" id="gallery">
         <h2>{props.title}</h2>
-        <p>{props.description}</p>
+        <p className="hide">{props.description}</p>
         <div className="slider-container">
             <div className="left-arrow" onClick={goToPrevious}>
             <i class="fa-regular fa-circle-left"></i>
@@ -33,6 +33,7 @@ function Gallery(props){
             <i class="fa-regular fa-circle-right"></i>
             </div>
         </div>
+        <p className='note'>**Click on description to see larger image</p>
     </div>
 }
 
