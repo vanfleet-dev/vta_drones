@@ -39,6 +39,11 @@ function App() {
           title={siteInfo.example.title}
           map1Text={siteInfo.example.map1Text}
           map2Text={siteInfo.example.map2Text}
+          text={siteInfo.platform.text}
+          videoCaption1={siteInfo.example.videoCaption[0]}
+          videoCaption2={siteInfo.example.videoCaption[1]}
+          tab1={siteInfo.example.tabInfo1} 
+          tab2={siteInfo.example.tabInfo2} 
           />
         <Platform
           title={siteInfo.platform.title}

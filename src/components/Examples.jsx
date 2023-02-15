@@ -1,5 +1,8 @@
 import React from 'react'
+import Tabs from './Tabs';
 import Iframe from 'react-iframe';
+import vid1 from '../media/map-demo-1.mp4';
+import vid2 from '../media/map-demo-2.mp4';
 
 function Examples(props){
     return <div className="example-container" id="examples">
@@ -8,10 +11,28 @@ function Examples(props){
         <div className="map-container">
             <iframe src="https://map-demo-1.devdock.me/" frameborder="0" className="example-maps"></iframe>
             <p>{props.map1Text}</p>
+            <div className="video-container">
+                <video width="100%" controls autoplay muted loop>
+                    <source src={vid1} type="video/mp4"></source>
+                </video>
+            </div>
+            <p>{props.videoCaption1}</p>
+            <div className="info-container">
+                <Tabs tabs={props.tab1} />
+            </div>
         </div>
         <div className="map-container">
             <iframe src="https://map-demo-2.devdock.me/" frameborder="0" className="example-maps"></iframe>
             <p>{props.map2Text}</p>
+            <div className="video-container"> 
+                <video width="100%" controls autoplay muted loop>
+                    <source src={vid2} type="video/mp4"></source>
+                </video>
+            </div>
+            <p>{props.videoCaption2}</p>
+            <div className="info-container">
+                <Tabs tabs={props.tab2} />
+            </div>
         </div>
     </div>
 }
