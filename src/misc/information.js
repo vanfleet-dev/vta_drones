@@ -153,8 +153,8 @@ export const siteInfo = {
         map1Text: "Digital elevation map with less than a .3cm deviation on elevation measurements compared to the licensed surveyors measurements of the same site.",
         map2Text: "80K sq m orthomosaic documenting the underground utilities that had been recently located and marked throughout the facility.",
         videoCaption: [
-            "This video shows functionality available in full version of this map in QGIS. Specifically it shows a tool used to measure height over distance in the DEM (digital elevation map) example. The height measurements are represented on a 2D graph and can be made on features that are sub inch in height.", 
-            "This video shows functionality available in the full version of the map in QGIS. Specifically it shows a feature that allows the user to see a 'street view' of a underground utility line represented on the map. Each icon can be clicked to see two pictures taken from the ground showing the utility line markings going up and down the line for additional perspective."],
+            "This video shows functionality available with the full version of the map in QGIS. Specifically it shows a tool used to measure height over distance in the DEM (digital elevation map) example. The height measurements are represented on a 2D graph and can be made on features that are sub inch in height.", 
+            "This video shows functionality available with the full version of the map in QGIS. Specifically it shows a feature that allows the user to see a 'street view' of a underground utility line represented on the map. Each icon can be clicked to see two pictures taken from the ground showing the utility line markings going up and down the line for additional perspective."],
         tabInfo1: [
             {
                 title: "DEM DETAILS",
@@ -174,7 +174,7 @@ export const siteInfo = {
                     "In this example underground utilities such as electric, water, gas, sewer, and data are represented by colored lines through out the property.",
                     "The underground utility lines are initially located by a 'utility locator'. The lines are marked on the ground with paint. This data in the form of painted lines is then collected during aerial mapping missions.",
                     "Additional layers are added to the map to give context and improve usability for the customer. Such as the colored lines that trace out the route of the paint marks from the utility locator and icons that when clicked show pictures from that position of the utility line from the ground. Between the aerial view and the 'street view' pictures the customer can accurately identify the location of the utilities long after the paint has washed away.",
-                    "These type of maps are called 'as built' maps. Traditional as built maps are usually out of date and not very accurate. This solution is a new take on the as built. The customer can achieve pin point accuracy when locating the underground utilities and most importantly the maps can be easily updated."
+                    "This type of map is called an 'as built' map. Traditional as built maps are usually out of date and not very accurate. This solution is a new take on the as built. The customer can achieve pin point accuracy when locating the underground utilities and most importantly the maps can be easily updated."
                 ]
             }
         ]
