@@ -46,10 +46,13 @@ p {
     justify-content: center;
     margin: 0 auto;
     width: 95%;
-    height: 50vh;
+    height: 40vh;
     padding-bottom: .5%;
     @media(max-width: 700px) {
         height: 40vh;
+    }
+    img {
+    	width: 100%;
     }
     h3 {
         text-align: center;
@@ -391,6 +394,7 @@ p {
         overflow: scroll;
         display: flex;
         justify-content: center;
+        align-items: center; //added 11/21/24
         padding: 3%;
         height: 100%;
         width: 100%;
@@ -398,6 +402,7 @@ p {
             padding: 1%;
         }
         p {
+        margin: auto;//added 11/21/24
             width: 90%;
             @media(max-width: 700px){
                 text-align: left;
